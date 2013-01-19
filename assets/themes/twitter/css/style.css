@@ -1,71 +1,99 @@
-/* Override some defaults */
-html, body {
-  background-color: #eee;
-}
-.navbar {
-  margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
+body {
+	background-color: white;
+	background-image: url("images/wood_pattern.png");
 }
 
-/* The white background content wrapper */
+.site_container {
+	width: 950px;
+	margin:0px auto;
+
+}
+h1 h2 h3 h4 h5 h6 p a {
+	color: #353839
+}
+/* --- Nav styling --- */
+
+.nav {
+}
+
+.nav_links {
+	margin-left: 600px;
+}
+
+.nav_links li  {
+	display: inline;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.nav_links a {
+	text-decoration: none;
+	color:#AA98A9;
+}
+
+.titles {
+	text-align: center;
+	border-bottom: 1px solid #edd;
+	margin-bottom: 10px;
+}
+.site_title  {
+	font-family: Verdana , sans-serif; 
+	font-style: bold;
+	font-size: 2.7em ;
+	text-decoration: none;
+	color: #353839 ;
+ /*; Emarld Green = #50C878 Latte = #c9b695 Steel Blue = #4682B4  Persian orange	=  #D99058 Lavander = #7d4b68 */
+}
+.mistakes {
+	color:#50C878;
+}
+
+.challenges {
+	color:#4682B4;
+}
+
+.aha_moments {
+	color:#D99058;
+}
+
+a:hover {
+	color: #4682B4;
+}
+
+.sub_title{
+	color: #AA98A9;
+	margin: 10px;
+}
+/* --- Content styling --- */
+
+.content_container {
+	padding: 10px;
+}
+
 .content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	margin-bottom: 20px;
+	line-height: 25px;
 }
 
-/* Page header tweaks */
-.page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
+/* --- Prev/Next styling --- */
+
+.pagination {
+	border-top: 1px solid #edd;
+	border-bottom: 1px solid #edd;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.previous {
+	font-size: 2em;
+	float: left;
+	margin-left: 40px;
 }
 
-.topbar .btn {
-  border: 0;
+.next {
+	font-size: 2em;
+	float: right;
+	margin-right: 40px;
 }
-
-
-/* tag_box ======================================================== */
-
-.tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
-}
-.tag_box li {
-	line-height:28px;
-}
-.tag_box.inline li {
-	float:left;
-}
-.tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
-}
-.tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
-}
-.tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
-}
-	
